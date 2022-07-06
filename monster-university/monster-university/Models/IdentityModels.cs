@@ -3,7 +3,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+
 using monster_university.Models.Clases;
+
 
 
 namespace monster_university.Models
@@ -34,6 +36,14 @@ namespace monster_university.Models
         
 
         public static DbSet<Carrera> Carreras { get; set; }
-       
+
+        public static DbSet<Persona> Personas { get; set; }
+
+        public static DbSet<Materia> Materias { get; set; }
+
+        public static DbSet<Historial> Historial { get; set; }
+
+
+
     }
 }

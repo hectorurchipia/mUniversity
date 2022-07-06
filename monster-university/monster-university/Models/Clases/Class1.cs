@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace monster_university.Models
+namespace monster_university.Models.Clases
 {
     public class Carrera  // : Entidad  esto lo hizo RW para lo de las claves de 128b
     {
@@ -52,7 +52,7 @@ namespace monster_university.Models
         }
     }
 
-    public class Historial
+    public class Historial 
     {
         public int id_persona { get; set; }
         public int id_materia { get; set; }

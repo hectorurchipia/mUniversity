@@ -134,3 +134,6 @@ C:\mUniversity\monster-university\monster-university\obj\Debug\monster-universit
 C:\mUniversity\monster-university\monster-university\obj\Debug\monster-university.csproj.CopyComplete
 C:\mUniversity\monster-university\monster-university\obj\Debug\monster-university.dll
 C:\mUniversity\monster-university\monster-university\obj\Debug\monster-university.pdb
+C:\mUniversity\monster-university\monster-university\obj\Debug\monster_university.Migrations.Inicial.resources
+C:\mUniversity\monster-university\monster-university\obj\Debug\monster-university.csproj.GenerateResource.cache
+C:\mUniversity\monster-university\monster-university\obj\Debug\monster_university.Migrations.Archivos.resources
