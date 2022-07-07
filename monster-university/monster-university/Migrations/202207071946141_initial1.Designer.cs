@@ -7,13 +7,13 @@ namespace monster_university.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class inicio : IMigrationMetadata
+    public sealed partial class initial1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(inicio));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initial1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202207062006422_inicio"; }
+            get { return "202207071946141_initial1"; }
         }
         
         string IMigrationMetadata.Source

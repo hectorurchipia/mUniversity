@@ -3,10 +3,56 @@ namespace monster_university.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class inicio : DbMigration
+    public partial class initial1 : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Carreras",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Nombre = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Historials",
+                c => new
+                    {
+                        Id = c.Guid(nullable: false),
+                        IdPersona = c.Int(nullable: false),
+                        IdCarrera = c.Int(nullable: false),
+                        IdMateria = c.Int(nullable: false),
+                        FechaExamen = c.DateTime(nullable: false),
+                        Nota = c.Single(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Materias",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        IdCarrera = c.Int(nullable: false),
+                        Nombre = c.String(),
+                        IdSemestre = c.Int(nullable: false),
+                        IdCorrelativa1 = c.Int(nullable: false),
+                        IdCorrelativa2 = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Personas",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Nombre = c.String(),
+                        Rol = c.Int(nullable: false),
+                        IdCarrera = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
@@ -94,6 +140,10 @@ namespace monster_university.Migrations
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Personas");
+            DropTable("dbo.Materias");
+            DropTable("dbo.Historials");
+            DropTable("dbo.Carreras");
         }
     }
 }

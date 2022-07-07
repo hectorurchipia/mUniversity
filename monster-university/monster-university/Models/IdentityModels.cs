@@ -34,13 +34,13 @@ namespace monster_university.Models
         }
         
 
-        public static DbSet<Carrera> Carreras { get; set; }
+        public  DbSet<Carrera> Carreras { get; set; }
 
-        public static DbSet<Persona> Personas { get; set; }
+        public  DbSet<Persona> Personas { get; set; }
 
-        public static DbSet<Materia> Materias { get; set; }
+        public  DbSet<Materia> Materias { get; set; }
 
-        public static DbSet<Historial> Historial { get; set; }
+        public  DbSet<Historial> Historial { get; set; }
 
 
 
