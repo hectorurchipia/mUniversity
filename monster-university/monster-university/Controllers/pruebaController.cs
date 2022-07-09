@@ -17,7 +17,9 @@ namespace monster_university.Controllers
         [HttpGet]
         public ActionResult Hola(string para)
         {
-            return View();
+            // return View();
+            return Json("ok", JsonRequestBehavior.AllowGet);
+
         }
 
     }
